@@ -316,9 +316,9 @@ section {
     color: var(--color-dark);
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu - Hidden on Desktop */
 .hamburger {
-    display: none;
+    display: none !important;
     flex-direction: column;
     background: none;
     border: none;
@@ -1357,7 +1357,7 @@ section {
     }
 
     .hamburger {
-        display: flex;
+        display: flex !important;
     }
 
     /* Logo responsive */
