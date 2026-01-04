@@ -254,6 +254,26 @@ section {
     list-style: none;
 }
 
+.nav-socials {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    padding-left: var(--spacing-xl);
+    border-left: 2px solid rgba(255, 107, 53, 0.3);
+}
+
+.nav-social-link {
+    font-size: var(--font-size-xl);
+    transition: transform var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-social-link:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
 .nav-link {
     color: var(--color-gray-light);
     font-weight: 500;
@@ -603,6 +623,45 @@ section {
     gap: var(--spacing-lg);
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.hero-socials {
+    text-align: center;
+}
+
+.hero-social-label {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-medium);
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-social-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-social {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    color: var(--color-light);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-social:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
 }
 
 .hero-accent {
@@ -1257,8 +1316,129 @@ section {
     }
 
     /* Navigation */
-    .brand-name {
-        display: inline;
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: rgba(15, 15, 15, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 0;
+        padding: var(--spacing-xl) 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: var(--spacing-lg) 0;
+        border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-socials {
+        border-left: none;
+        padding-left: 0;
+        padding: var(--spacing-lg) 0;
+        gap: var(--spacing-md);
+        justify-content: center;
+        border-top: 1px solid rgba(255, 107, 53, 0.1);
+        border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+    }
+
+    .nav-social-link {
+        font-size: var(--font-size-xl);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Logo responsive */
+    .brand-logos {
+        gap: var(--spacing-sm);
+    }
+
+    .brand-logo {
+        height: 45px;
+    }
+
+    /* Sections */
+    section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Hero */
+    .hero {
+        margin-top: 60px;
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .hero-ctas .btn {
+        width: 100%;
+    }
+
+    .hero-social-links {
+        flex-direction: column;
+    }
+
+    .hero-social {
+        width: 100%;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    /* About Grid */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    /* Shop Grid */
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
     }
 
     .nav-menu {
