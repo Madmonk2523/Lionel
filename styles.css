@@ -238,14 +238,6 @@ section {
     transform: scale(1.05);
 }
 
-.logo-training {
-    /* Specific styles for fitness logo if needed */
-}
-
-.logo-clothing {
-    /* Specific styles for branded logo if needed */
-}
-
 .logo-placeholder {
     display: none; /* Hide old placeholders */
 }
@@ -1521,7 +1513,6 @@ section {
 
 /* ================================================
    SHOP SECTION
-   ================================================ */
    ================================================ */
 
 .shop {
